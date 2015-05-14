@@ -1,0 +1,12 @@
+Source: ros-hydro-image-transport
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin, ros-hydro-message-filters, ros-hydro-pluginlib, ros-hydro-rosconsole, ros-hydro-roscpp, ros-hydro-roslib, ros-hydro-sensor-msgs
+Homepage: http://ros.org/wiki/image_transport
+Standards-Version: 3.9.2
+
+Package: ros-hydro-image-transport
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-message-filters, ros-hydro-pluginlib, ros-hydro-rosconsole, ros-hydro-roscpp, ros-hydro-roslib, ros-hydro-sensor-msgs
+Description: image_transport should always be used to subscribe to and publish images. It provides transparent support for transporting images in low-bandwidth compressed formats. Examples (provided by separate plugin packages) include JPEG/PNG compression and Theora streaming video.
