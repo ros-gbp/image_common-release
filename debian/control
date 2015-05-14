@@ -1,0 +1,12 @@
+Source: ros-hydro-camera-calibration-parsers
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, pkg-config, ros-hydro-catkin, ros-hydro-rosconsole, ros-hydro-sensor-msgs, yaml-cpp
+Homepage: http://ros.org/wiki/camera_calibration_parsers
+Standards-Version: 3.9.2
+
+Package: ros-hydro-camera-calibration-parsers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-sensor-msgs, yaml-cpp
+Description: camera_calibration_parsers contains routines for reading and writing camera calibration parameters.
