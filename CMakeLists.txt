@@ -3,7 +3,9 @@ project(camera_calibration_parsers)
 
 find_package(catkin REQUIRED sensor_msgs rosconsole)
 
-include_directories(include ${catkin_INCLUDE_DIRS})
+find_package(Boost REQUIRED COMPONENTS filesystem)
+
+include_directories(include ${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
 
 catkin_package(
   INCLUDE_DIRS include
@@ -18,6 +20,9 @@ if (APPLE)
   find_library(YAML_CPP_LIBRARIES NAMES yaml-cpp)
   find_path(YAML_CPP_H_INCLUDE_DIR yaml-cpp/yaml.h )
   SET(YAML_CPP_INCLUDE_DIR ${YAML_CPP_H_INCLUDE_DIR}/yaml-cpp)
+elseif (ANDROID)
+    find_package(yaml-cpp)
+    add_definitions(-DHAVE_NEW_YAMLCPP)
 else()
   pkg_check_modules(YAML_CPP yaml-cpp)
   if(${YAML_CPP_VERSION} VERSION_GREATER 0.5)
@@ -34,12 +39,7 @@ add_library(${PROJECT_NAME}
   src/parse_yml.cpp
 )
 
-if (APPLE)
-  #target link fixes for mac os
-  target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${YAML_CPP_LIBRARIES})
-else()
-  target_link_libraries(${PROJECT_NAME} yaml-cpp ${catkin_LIBRARIES} ${YAML_CPP_LIBRARIES})
-endif()
+target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${YAML_CPP_LIBRARIES} ${Boost_LIBRARIES})
 
 add_dependencies(${PROJECT_NAME} sensor_msgs_gencpp)
 
@@ -61,3 +61,7 @@ install(
   TARGETS convert
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+
+if(CATKIN_ENABLE_TESTING)
+  add_subdirectory(test)
+endif()
