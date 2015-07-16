@@ -36,11 +36,14 @@
 #include <sensor_msgs/distortion_models.h>
 #include <ros/console.h>
 
+#include <boost/spirit/include/phoenix_stl.hpp>
+#include <boost/spirit/include/qi.hpp>
 #include <boost/spirit/include/classic_core.hpp>
 #include <boost/spirit/include/classic_file_iterator.hpp>
 #include <boost/spirit/include/classic_confix.hpp>
 #include <boost/spirit/include/classic_loops.hpp>
 #include <boost/typeof/typeof.hpp>
+#include <boost/filesystem.hpp>
 #include <iterator>
 #include <fstream>
 
@@ -110,6 +113,11 @@ bool writeCalibrationIni(std::ostream& out, const std::string& camera_name,
 bool writeCalibrationIni(const std::string& file_name, const std::string& camera_name,
                          const sensor_msgs::CameraInfo& cam_info)
 {
+  boost::filesystem::path dir(boost::filesystem::path(file_name).parent_path());
+  if(!boost::filesystem::exists(dir) &&
+     !boost::filesystem::create_directories(dir)){
+    ROS_ERROR("Unable to create directory for camera calibration file [%s]", dir.c_str());
+  }
   std::ofstream out(file_name.c_str());
   if (!out.is_open())
   {
@@ -147,10 +155,8 @@ template <typename Iterator>
 bool parseCalibrationIniRange(Iterator first, Iterator last,
                               std::string& camera_name, sensor_msgs::CameraInfo& cam_info)
 {
-  // Assume plumb bob model
-  cam_info.distortion_model = sensor_msgs::distortion_models::PLUMB_BOB;
-  cam_info.D.resize(5);
-  
+  cam_info.D.clear();
+
   // We don't actually use the [externals] info, but it's part of the format
   bool have_externals = false;
   double trans[3], rot[3];
@@ -184,7 +190,7 @@ bool parseCalibrationIniRange(Iterator first, Iterator last,
       >> "camera matrix"
       >> repeat_p(9)[real_p[array_assign_a(&cam_info.K[0])]]
       >> "distortion"
-      >> repeat_p(5)[real_p[array_assign_a(&cam_info.D[0])]]
+      >> *(real_p[push_back_a(cam_info.D)])
       >> "rectification"
       >> repeat_p(9)[real_p[array_assign_a(&cam_info.R[0])]]
       >> "projection"
@@ -201,6 +207,13 @@ bool parseCalibrationIniRange(Iterator first, Iterator last,
   BOOST_AUTO(skip, space_p | comment_p('#'));
 
   parse_info<Iterator> info = parse(first, last, ini_grammar, skip);
+
+  // Figure out the distortion model
+  if (cam_info.D.size() == 5)
+    cam_info.distortion_model = sensor_msgs::distortion_models::PLUMB_BOB;
+  else if (cam_info.D.size() == 8)
+    cam_info.distortion_model = sensor_msgs::distortion_models::RATIONAL_POLYNOMIAL;
+
   return info.hit;
 }
 /// \endcond
