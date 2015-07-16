@@ -1,0 +1,12 @@
+Source: ros-indigo-camera-calibration-parsers
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libyaml-cpp-dev, pkg-config, ros-indigo-catkin, ros-indigo-rosbash, ros-indigo-rosconsole, ros-indigo-rosunit, ros-indigo-sensor-msgs
+Homepage: http://ros.org/wiki/camera_calibration_parsers
+Standards-Version: 3.9.2
+
+Package: ros-indigo-camera-calibration-parsers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libyaml-cpp-dev, ros-indigo-sensor-msgs
+Description: camera_calibration_parsers contains routines for reading and writing camera calibration parameters.
