@@ -1,3 +1,31 @@
+## image_common (kinetic) - 1.11.10-0
+
+The packages in the `image_common` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --track kinetic --rosdistro kinetic image_common` on `Thu, 17 Mar 2016 22:43:14 -0000`
+
+These packages were released:
+- `camera_calibration_parsers`
+- `camera_info_manager`
+- `image_common`
+- `image_transport`
+- `polled_camera`
+
+Version of package(s) in repository `image_common`:
+
+- upstream repository: https://github.com/ros-perception/image_common.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.11.10-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.5`
+- vcstools version: `0.1.38`
+
+
 ## image_common (jade) - 1.11.10-0
 
 The packages in the `image_common` repository were released into the `jade` distro by running `/usr/bin/bloom-release --track jade --rosdistro jade image_common` on `Tue, 19 Jan 2016 20:51:41 -0000`
