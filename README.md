@@ -1,3 +1,31 @@
+## image_common (indigo) - 1.11.12-0
+
+The packages in the `image_common` repository were released into the `indigo` distro by running `/usr/bin/bloom-release image_common --track indigo --rosdistro indigo` on `Sun, 29 Jan 2017 20:15:55 -0000`
+
+These packages were released:
+- `camera_calibration_parsers`
+- `camera_info_manager`
+- `image_common`
+- `image_transport`
+- `polled_camera`
+
+Version of package(s) in repository `image_common`:
+
+- upstream repository: https://github.com/ros-perception/image_common.git
+- release repository: https://github.com/ros-gbp/image_common-release.git
+- rosdistro version: `1.11.11-0`
+- old version: `1.11.11-0`
+- new version: `1.11.12-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.23`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## image_common (kinetic) - 1.11.11-0
 
 The packages in the `image_common` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro kinetic --track kinetic image_common` on `Sat, 24 Sep 2016 18:36:34 -0000`
