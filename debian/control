@@ -1,0 +1,12 @@
+Source: ros-jade-camera-calibration-parsers
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libyaml-cpp-dev, pkg-config, ros-jade-catkin, ros-jade-rosbash, ros-jade-rosconsole, ros-jade-roscpp, ros-jade-roscpp-serialization, ros-jade-rosunit, ros-jade-sensor-msgs
+Homepage: http://ros.org/wiki/camera_calibration_parsers
+Standards-Version: 3.9.2
+
+Package: ros-jade-camera-calibration-parsers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libyaml-cpp-dev, ros-jade-roscpp, ros-jade-roscpp-serialization, ros-jade-sensor-msgs
+Description: camera_calibration_parsers contains routines for reading and writing camera calibration parameters.
