@@ -1,0 +1,316 @@
+ros-kinetic-image-transport (1.11.13-0jessie) jessie; urgency=high
+
+  * Disable image publisher plugins by name (#60 <https://github.com/ros-perception/image_common/issues/60>)
+    * Disable publisher plugins by name
+    * Now have per publisher blacklist instead of image_transport wide.
+  * update to use non deprecated pluginlib macro
+  * Extend documentation of getCameraInfoTopic
+    Document the fact that the base_topic argument must be resolved in order to build the correct camera info topic.
+  * Added cv::waitkey(10) for blank popup
+    Without the cv::waitkey(10), it results in a blank popup which crashes/ leads to a black popup. This change corrects that problem.
+    ROS Kinetic, Ubuntu 16.04.3
+  * Contributors: Aaditya Saraiya, Lucas Walter, Mikael Arguedas, Thibaud Chupin, Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 04 Nov 2017 23:00:00 -0000
+
+ros-kinetic-image-transport (1.11.12-0jessie) jessie; urgency=high
+
+  * Fix CMake of image_transport/tutorial and polled_camera
+    Fix loads of problems with the CMakeLists.
+  * image_transport/tutorial: Add dependency on generated msg
+    Without this, build fails on Kinetic because ResizedImage.h has not been
+    generated yet.
+  * image_transport/tutorial: Add missing catkin_INCLUDE_DIRS
+    Without this, compilation files on Kinetic because ros.h cannot be found.
+  * 1.11.11
+  * update changelogs
+  * Contributors: Martin Guenther, Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 28 Jan 2017 23:00:00 -0000
+
+ros-kinetic-image-transport (1.11.11-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Fri, 23 Sep 2016 22:00:00 -0000
+
+ros-kinetic-image-transport (1.11.10-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Mon, 18 Jan 2016 23:00:00 -0000
+
+ros-kinetic-image-transport (1.11.9-0jessie) jessie; urgency=high
+
+  * fix linkage in tutorials
+  * Use $catkin_EXPORTED_TARGETS
+  * Contributors: Jochen Sprickerhof, Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 16 Jan 2016 23:00:00 -0000
+
+ros-kinetic-image-transport (1.11.8-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 28 Nov 2015 23:00:00 -0000
+
+ros-kinetic-image-transport (1.11.7-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Mon, 27 Jul 2015 22:00:00 -0000
+
+ros-kinetic-image-transport (1.11.6-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Wed, 15 Jul 2015 22:00:00 -0000
+
+ros-kinetic-image-transport (1.11.5-0jessie) jessie; urgency=high
+
+  * image_transport: fix CameraSubscriber shutdown (circular shared_ptr ref)
+    CameraSubscriber uses a private boost::shared_ptr to share an impl object
+    between copied instances. In CameraSubscriber::CameraSubscriber(), it
+    handed this shared_ptr to boost::bind() and saved the created wall timer
+    in the impl object, thus creating a circular reference. The impl object
+    was therefore never freed.
+    Fix that by passing a plain pointer to boost::bind().
+  * avoid a memory copy for the raw publisher
+  * add a way to publish an image with only the data pointer
+  * Make function inline to avoid duplicated names when linking statically
+  * add plugin examples for the tutorial
+  * update instructions for catkin
+  * remove uselessly linked library
+    fixes #28 <https://github.com/ros-perception/image_common/issues/28>
+  * add a tutorial for image_transport
+  * Contributors: Gary Servin, Max Schwarz, Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Wed, 13 May 2015 22:00:00 -0000
+
+ros-kinetic-image-transport (1.11.4-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 20 Sep 2014 22:00:00 -0000
+
+ros-kinetic-image-transport (1.11.3-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 18 May 2014 22:00:00 -0000
+
+ros-kinetic-image-transport (1.11.2-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Wed, 12 Feb 2014 23:00:00 -0000
+
+ros-kinetic-image-transport (1.11.1-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 26 Jan 2014 01:33:00 -0000
+
+ros-kinetic-image-transport (1.11.0-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 20 Jul 2013 10:23:00 -0000
+
+ros-kinetic-image-transport (1.10.5-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 26 Jan 2014 01:34:00 -0000
+
+ros-kinetic-image-transport (1.10.4-0jessie) jessie; urgency=high
+
+  * add Jack as maintainer
+  * update my email address
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 20 Jul 2013 09:42:00 -0000
+
+ros-kinetic-image-transport (1.10.3-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 21 Feb 2013 04:33:00 -0000
+
+ros-kinetic-image-transport (1.10.2-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 21 Feb 2013 03:48:00 -0000
+
+ros-kinetic-image-transport (1.10.1-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 21 Feb 2013 03:16:00 -0000
+
+ros-kinetic-image-transport (1.10.0-0jessie) jessie; urgency=high
+
+  * fix the urls
+  * use the pluginlib script to remove some warnings
+  * added license headers to various cpp and h files
+  * Contributors: Aaron Blasdel, Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 12 Jan 2013 23:00:00 -0000
+
+ros-kinetic-image-transport (1.9.22-0jessie) jessie; urgency=high
+
+  * get rid of the deprecated class_loader interface
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 15 Dec 2012 23:00:00 -0000
+
+ros-kinetic-image-transport (1.9.21-0jessie) jessie; urgency=high
+
+  * CMakeLists.txt clean up
+  * Updated package.xml file(s) to handle new catkin buildtool_depend
+    requirement
+  * Contributors: William Woodall, mirzashah
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 13 Dec 2012 23:00:00 -0000
+
+ros-kinetic-image-transport (1.9.20-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Mon, 03 Dec 2012 23:00:00 -0000
+
+ros-kinetic-image-transport (1.9.19-0jessie) jessie; urgency=high
+
+  * add the right link libraries
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Wed, 07 Nov 2012 23:00:00 -0000
+
+ros-kinetic-image-transport (1.9.18-0jessie) jessie; urgency=high
+
+  * Isolated plugins into their own library to follow new
+    class_loader/pluginlib guidelines.
+  * remove the brief attribute
+  * Contributors: Mirza Shah, Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Mon, 05 Nov 2012 23:00:00 -0000
+
+ros-kinetic-image-transport (1.9.17-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 30 Oct 2012 18:32:00 -0000
+
+ros-kinetic-image-transport (1.9.16-0jessie) jessie; urgency=high
+
+  * add xml file
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 30 Oct 2012 08:10:00 -0000
+
+ros-kinetic-image-transport (1.9.15-0jessie) jessie; urgency=high
+
+  * fix bad folder/libraries
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 13 Oct 2012 06:43:00 -0000
+
+ros-kinetic-image-transport (1.9.14-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Fri, 12 Oct 2012 23:07:00 -0000
+
+ros-kinetic-image-transport (1.9.13-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Fri, 05 Oct 2012 22:00:00 -0000
+
+ros-kinetic-image-transport (1.9.12-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Wed, 03 Oct 2012 22:00:00 -0000
+
+ros-kinetic-image-transport (1.9.11-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 02 Oct 2012 00:56:00 -0000
+
+ros-kinetic-image-transport (1.9.10-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 02 Oct 2012 00:42:00 -0000
+
+ros-kinetic-image-transport (1.9.9-0jessie) jessie; urgency=high
+
+  * fix dependencies
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 30 Sep 2012 22:00:00 -0000
+
+ros-kinetic-image-transport (1.9.8-0jessie) jessie; urgency=high
+
+  * add catkin as a dependency
+  * comply to the catkin API
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 29 Sep 2012 22:00:00 -0000
+
+ros-kinetic-image-transport (1.9.7-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 18 Sep 2012 09:39:00 -0000
+
+ros-kinetic-image-transport (1.9.6-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 18 Sep 2012 09:07:00 -0000
+
+ros-kinetic-image-transport (1.9.5-0jessie) jessie; urgency=high
+
+  * install the include directories
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Wed, 12 Sep 2012 22:00:00 -0000
+
+ros-kinetic-image-transport (1.9.4-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Wed, 12 Sep 2012 21:37:00 -0000
+
+ros-kinetic-image-transport (1.9.3-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Wed, 12 Sep 2012 18:44:00 -0000
+
+ros-kinetic-image-transport (1.9.2-0jessie) jessie; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 09 Sep 2012 22:00:00 -0000
+
+ros-kinetic-image-transport (1.9.1-0jessie) jessie; urgency=high
+
+  * make the libraries public
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Fri, 07 Sep 2012 13:33:00 -0000
+
+ros-kinetic-image-transport (1.9.0-0jessie) jessie; urgency=high
+
+  * catkinize for Groovy
+  * Initial image_common stack check-in, containing image_transport.
+  * Contributors: Vincent Rabaud, gerkey, kwc, mihelich, pmihelich, straszheim, vrabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Fri, 07 Sep 2012 11:03:00 -0000
+
+
