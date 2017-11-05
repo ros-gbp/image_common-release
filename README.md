@@ -1,3 +1,31 @@
+## image_common (lunar) - 1.11.13-0
+
+The packages in the `image_common` repository were released into the `lunar` distro by running `/usr/bin/bloom-release --track lunar --rosdistro lunar image_common` on `Sun, 05 Nov 2017 16:44:38 -0000`
+
+These packages were released:
+- `camera_calibration_parsers`
+- `camera_info_manager`
+- `image_common`
+- `image_transport`
+- `polled_camera`
+
+Version of package(s) in repository `image_common`:
+
+- upstream repository: https://github.com/ros-perception/image_common.git
+- release repository: https://github.com/ros-gbp/image_common-release.git
+- rosdistro version: `1.11.12-0`
+- old version: `1.11.12-0`
+- new version: `1.11.13-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.1`
+- catkin_pkg version: `0.3.9`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## image_common (kinetic) - 1.11.13-0
 
 The packages in the `image_common` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --track kinetic --rosdistro kinetic image_common` on `Sun, 05 Nov 2017 16:32:31 -0000`
