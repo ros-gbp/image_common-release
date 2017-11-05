@@ -1,0 +1,12 @@
+Source: ros-kinetic-camera-calibration-parsers
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libyaml-cpp-dev, pkg-config, ros-kinetic-catkin, ros-kinetic-rosbash, ros-kinetic-rosconsole, ros-kinetic-roscpp, ros-kinetic-roscpp-serialization, ros-kinetic-rosunit, ros-kinetic-sensor-msgs
+Homepage: http://ros.org/wiki/camera_calibration_parsers
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-camera-calibration-parsers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libyaml-cpp-dev, ros-kinetic-roscpp, ros-kinetic-roscpp-serialization, ros-kinetic-sensor-msgs
+Description: camera_calibration_parsers contains routines for reading and writing camera calibration parameters.
