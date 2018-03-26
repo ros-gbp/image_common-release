@@ -1,0 +1,12 @@
+Source: ros-melodic-image-common
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://www.ros.org/wiki/image_common
+Standards-Version: 3.9.2
+
+Package: ros-melodic-image-common
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-camera-calibration-parsers, ros-melodic-camera-info-manager, ros-melodic-image-transport, ros-melodic-polled-camera
+Description: Common code for working with images in ROS.
