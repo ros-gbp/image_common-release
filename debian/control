@@ -1,0 +1,13 @@
+Source: ros-melodic-camera-info-manager
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libgtest-dev, ros-melodic-camera-calibration-parsers, ros-melodic-catkin (>= 0.5.68), ros-melodic-image-transport, ros-melodic-roscpp, ros-melodic-roslib, ros-melodic-rostest, ros-melodic-sensor-msgs
+Homepage: http://ros.org/wiki/camera_info_manager
+Standards-Version: 3.9.2
+
+Package: ros-melodic-camera-info-manager
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-melodic-camera-calibration-parsers, ros-melodic-image-transport, ros-melodic-roscpp, ros-melodic-roslib, ros-melodic-sensor-msgs
+Description: This package provides a C++ interface for camera calibration information.
+ It provides CameraInfo, and handles SetCameraInfo service requests, saving and restoring the camera calibration data.
