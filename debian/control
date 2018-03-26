@@ -1,0 +1,13 @@
+Source: ros-melodic-image-transport
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-message-filters, ros-melodic-pluginlib, ros-melodic-rosconsole, ros-melodic-roscpp, ros-melodic-roslib, ros-melodic-sensor-msgs
+Homepage: http://ros.org/wiki/image_transport
+Standards-Version: 3.9.2
+
+Package: ros-melodic-image-transport
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-message-filters, ros-melodic-pluginlib, ros-melodic-rosconsole, ros-melodic-roscpp, ros-melodic-roslib, ros-melodic-sensor-msgs
+Description: image_transport should always be used to subscribe to and publish images.
+ It provides transparent support for transporting images in low-bandwidth compressed formats. Examples (provided by separate plugin packages) include JPEG/PNG compression and Theora streaming video.
