@@ -1,0 +1,12 @@
+Source: ros-melodic-camera-calibration-parsers
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libyaml-cpp-dev, pkg-config, ros-melodic-catkin, ros-melodic-rosbash, ros-melodic-rosconsole, ros-melodic-roscpp, ros-melodic-roscpp-serialization, ros-melodic-rosunit, ros-melodic-sensor-msgs
+Homepage: http://ros.org/wiki/camera_calibration_parsers
+Standards-Version: 3.9.2
+
+Package: ros-melodic-camera-calibration-parsers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libyaml-cpp-dev, ros-melodic-roscpp, ros-melodic-roscpp-serialization, ros-melodic-sensor-msgs
+Description: camera_calibration_parsers contains routines for reading and writing camera calibration parameters.
