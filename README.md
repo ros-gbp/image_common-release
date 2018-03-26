@@ -1,3 +1,31 @@
+## image_common (melodic) - 1.11.13-0
+
+The packages in the `image_common` repository were released into the `melodic` distro by running `/usr/bin/bloom-release image_common -t melodic -r melodic -n` on `Mon, 26 Mar 2018 21:45:57 -0000`
+
+These packages were released:
+- `camera_calibration_parsers`
+- `camera_info_manager`
+- `image_common`
+- `image_transport`
+- `polled_camera`
+
+Version of package(s) in repository `image_common`:
+
+- upstream repository: https://github.com/ros-perception/image_common.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.11.13-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.1`
+- rosdep version: `0.12.1`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## image_common (lunar) - 1.11.13-0
 
 The packages in the `image_common` repository were released into the `lunar` distro by running `/usr/bin/bloom-release --track lunar --rosdistro lunar image_common` on `Sun, 05 Nov 2017 16:44:38 -0000`
