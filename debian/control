@@ -1,0 +1,13 @@
+Source: ros-melodic-polled-camera
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-image-transport, ros-melodic-message-generation, ros-melodic-roscpp, ros-melodic-sensor-msgs, ros-melodic-std-msgs
+Homepage: http://ros.org/wiki/polled_camera
+Standards-Version: 3.9.2
+
+Package: ros-melodic-polled-camera
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-image-transport, ros-melodic-message-runtime, ros-melodic-roscpp, ros-melodic-sensor-msgs, ros-melodic-std-msgs
+Description: polled_camera contains a service and C++ helper classes for implementing a polled camera driver node and requesting images from it.
+ The package is currently for internal use as the API is still under development.
