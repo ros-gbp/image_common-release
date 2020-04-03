@@ -1,0 +1,13 @@
+Source: ros-noetic-camera-info-manager
+Section: misc
+Priority: optional
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libgtest-dev, ros-noetic-camera-calibration-parsers, ros-noetic-catkin (>= 0.5.68), ros-noetic-image-transport, ros-noetic-roscpp, ros-noetic-roslib, ros-noetic-rostest, ros-noetic-sensor-msgs
+Homepage: http://ros.org/wiki/camera_info_manager
+Standards-Version: 3.9.2
+
+Package: ros-noetic-camera-info-manager
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-noetic-camera-calibration-parsers, ros-noetic-image-transport, ros-noetic-roscpp, ros-noetic-roslib, ros-noetic-sensor-msgs
+Description: This package provides a C++ interface for camera calibration information.
+ It provides CameraInfo, and handles SetCameraInfo service requests, saving and restoring the camera calibration data.
