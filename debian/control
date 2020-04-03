@@ -1,0 +1,12 @@
+Source: ros-noetic-camera-calibration-parsers
+Section: misc
+Priority: optional
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libyaml-cpp-dev, pkg-config, ros-noetic-catkin, ros-noetic-rosbash, ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-roscpp-serialization, ros-noetic-rosunit, ros-noetic-sensor-msgs
+Homepage: http://ros.org/wiki/camera_calibration_parsers
+Standards-Version: 3.9.2
+
+Package: ros-noetic-camera-calibration-parsers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libyaml-cpp-dev, ros-noetic-roscpp, ros-noetic-roscpp-serialization, ros-noetic-sensor-msgs
+Description: camera_calibration_parsers contains routines for reading and writing camera calibration parameters.
