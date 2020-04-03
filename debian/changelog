@@ -1,0 +1,278 @@
+ros-noetic-image-common (1.12.0-1buster) buster; urgency=high
+
+  * Noetic release image_common (#155 <https://github.com/ros-perception/image_common/issues/155>)
+  * Contributors: Alejandro Hernández Cordero
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Fri, 03 Apr 2020 05:00:00 -0000
+
+ros-noetic-image-common (1.11.14-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Fri, 03 Apr 2020 05:00:00 -0000
+
+ros-noetic-image-common (1.11.13-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 05 Nov 2017 05:00:00 -0000
+
+ros-noetic-image-common (1.11.12-1buster) buster; urgency=high
+
+  * 1.11.11
+  * update changelogs
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 29 Jan 2017 06:00:00 -0000
+
+ros-noetic-image-common (1.11.11-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 24 Sep 2016 05:00:00 -0000
+
+ros-noetic-image-common (1.11.10-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 19 Jan 2016 06:00:00 -0000
+
+ros-noetic-image-common (1.11.9-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 17 Jan 2016 06:00:00 -0000
+
+ros-noetic-image-common (1.11.8-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 29 Nov 2015 06:00:00 -0000
+
+ros-noetic-image-common (1.11.7-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 28 Jul 2015 05:00:00 -0000
+
+ros-noetic-image-common (1.11.6-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 16 Jul 2015 05:00:00 -0000
+
+ros-noetic-image-common (1.11.5-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 14 May 2015 05:00:00 -0000
+
+ros-noetic-image-common (1.11.4-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 21 Sep 2014 05:00:00 -0000
+
+ros-noetic-image-common (1.11.3-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Mon, 19 May 2014 05:00:00 -0000
+
+ros-noetic-image-common (1.11.2-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 13 Feb 2014 06:00:00 -0000
+
+ros-noetic-image-common (1.11.1-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 26 Jan 2014 08:33:00 -0000
+
+ros-noetic-image-common (1.11.0-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 20 Jul 2013 17:23:00 -0000
+
+ros-noetic-image-common (1.10.5-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 26 Jan 2014 08:34:00 -0000
+
+ros-noetic-image-common (1.10.4-1buster) buster; urgency=high
+
+  * add Jack as maintainer
+  * comply to REP 0127
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 20 Jul 2013 16:42:00 -0000
+
+ros-noetic-image-common (1.10.3-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 21 Feb 2013 11:33:00 -0000
+
+ros-noetic-image-common (1.10.2-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 21 Feb 2013 10:48:00 -0000
+
+ros-noetic-image-common (1.10.1-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 21 Feb 2013 10:16:00 -0000
+
+ros-noetic-image-common (1.10.0-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 13 Jan 2013 06:00:00 -0000
+
+ros-noetic-image-common (1.9.22-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 16 Dec 2012 06:00:00 -0000
+
+ros-noetic-image-common (1.9.21-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Fri, 14 Dec 2012 06:00:00 -0000
+
+ros-noetic-image-common (1.9.20-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 04 Dec 2012 06:00:00 -0000
+
+ros-noetic-image-common (1.9.19-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 08 Nov 2012 06:00:00 -0000
+
+ros-noetic-image-common (1.9.18-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 06 Nov 2012 06:00:00 -0000
+
+ros-noetic-image-common (1.9.17-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Wed, 31 Oct 2012 00:32:00 -0000
+
+ros-noetic-image-common (1.9.16-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 30 Oct 2012 14:10:00 -0000
+
+ros-noetic-image-common (1.9.15-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 13 Oct 2012 13:43:00 -0000
+
+ros-noetic-image-common (1.9.14-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 13 Oct 2012 06:07:00 -0000
+
+ros-noetic-image-common (1.9.13-1buster) buster; urgency=high
+
+  * add missing description
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sat, 06 Oct 2012 05:00:00 -0000
+
+ros-noetic-image-common (1.9.12-1buster) buster; urgency=high
+
+  * define metapackage
+  * Contributors: Vincent Rabaud
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 04 Oct 2012 05:00:00 -0000
+
+ros-noetic-image-common (1.9.11-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 02 Oct 2012 07:56:00 -0000
+
+ros-noetic-image-common (1.9.10-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 02 Oct 2012 07:42:00 -0000
+
+ros-noetic-image-common (1.9.9-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Mon, 01 Oct 2012 05:00:00 -0000
+
+ros-noetic-image-common (1.9.8-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Sun, 30 Sep 2012 05:00:00 -0000
+
+ros-noetic-image-common (1.9.7-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 18 Sep 2012 16:39:00 -0000
+
+ros-noetic-image-common (1.9.6-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Tue, 18 Sep 2012 16:07:00 -0000
+
+ros-noetic-image-common (1.9.5-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 13 Sep 2012 05:00:00 -0000
+
+ros-noetic-image-common (1.9.4-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 13 Sep 2012 04:37:00 -0000
+
+ros-noetic-image-common (1.9.3-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Thu, 13 Sep 2012 01:44:00 -0000
+
+ros-noetic-image-common (1.9.2-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Mon, 10 Sep 2012 05:00:00 -0000
+
+ros-noetic-image-common (1.9.1-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Fri, 07 Sep 2012 20:33:00 -0000
+
+ros-noetic-image-common (1.9.0-1buster) buster; urgency=high
+
+
+
+ -- Jack O'Quin <jack.oquin@gmail.com>  Fri, 07 Sep 2012 18:03:00 -0000
+
+
