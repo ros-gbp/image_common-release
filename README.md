@@ -1,3 +1,31 @@
+## image_common (noetic) - 1.12.0-1
+
+The packages in the `image_common` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic image_common` on `Fri, 03 Apr 2020 17:49:40 -0000`
+
+These packages were released:
+- `camera_calibration_parsers`
+- `camera_info_manager`
+- `image_common`
+- `image_transport`
+- `polled_camera`
+
+Version of package(s) in repository `image_common`:
+
+- upstream repository: https://github.com/ros-perception/image_common.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.12.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.3`
+- catkin_pkg version: `0.4.16`
+- rosdep version: `0.18.0`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.42`
+
+
 ## image_common (melodic) - 1.11.13-0
 
 The packages in the `image_common` repository were released into the `melodic` distro by running `/usr/bin/bloom-release image_common -t melodic -r melodic -n` on `Mon, 26 Mar 2018 21:45:57 -0000`
