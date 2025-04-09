@@ -1,0 +1,13 @@
+Source: ros-noetic-image-transport
+Section: misc
+Priority: optional
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-message-filters, ros-noetic-pluginlib, ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-roslib, ros-noetic-sensor-msgs
+Homepage: http://ros.org/wiki/image_transport
+Standards-Version: 3.9.2
+
+Package: ros-noetic-image-transport
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-message-filters, ros-noetic-pluginlib, ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-roslib, ros-noetic-sensor-msgs
+Description: image_transport should always be used to subscribe to and publish images.
+ It provides transparent support for transporting images in low-bandwidth compressed formats. Examples (provided by separate plugin packages) include JPEG/PNG compression and Theora streaming video.
