@@ -2,6 +2,23 @@
 Changelog for package camera_info_manager
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.12.1 (2025-04-09)
+-------------------
+* Revert "Virtualize CameraInfoManager  (`#234 <https://github.com/ros-perception/image_common/issues/234>`_)" (`#353 <https://github.com/ros-perception/image_common/issues/353>`_)
+  This reverts commit e9c8c3246007d7717708b5267e1e2e909e4c0694.
+  It cannot be released into ROS Noetic because it breaks ABI.
+* Add support for missing CameraInfo.msg fields (`#175 <https://github.com/ros-perception/image_common/issues/175>`_)
+  Co-authored-by: anre <andreas.reich@unibw.de>
+* Virtualize CameraInfoManager  (`#234 <https://github.com/ros-perception/image_common/issues/234>`_)
+  * Virtualize CameraInfoManager so custom camera implementations can support flash operations
+  * Update camera_info_manager/src/camera_info_manager.cpp
+  Co-authored-by: Geoffrey Biggs <gbiggs@killbots.net>
+  * Move function bodies
+  Co-authored-by: Geoffrey Biggs <gbiggs@killbots.net>
+* fix linter warnings due to extra ";" after end of namespace braces (`#210 <https://github.com/ros-perception/image_common/issues/210>`_)
+* (camera_info_manager) include own dirs before catkin dirs (`#199 <https://github.com/ros-perception/image_common/issues/199>`_)
+* Contributors: Bernd Pfrommer, Matthijs van der Burgh, Shane Loretz, UniBwTAS, jdavidberger
+
 1.12.0 (2020-04-03)
 -------------------
 * Noetic release image_common (`#155 <https://github.com/ros-perception/image_common/issues/155>`_)
