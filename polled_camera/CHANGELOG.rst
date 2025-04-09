@@ -2,6 +2,11 @@
 Changelog for package polled_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.12.1 (2025-04-09)
+-------------------
+* Switch to new boost/bind/bind.hpp (`#227 <https://github.com/ros-perception/image_common/issues/227>`_)
+* Contributors: Jochen Sprickerhof
+
 1.12.0 (2020-04-03)
 -------------------
 * Noetic release image_common (`#155 <https://github.com/ros-perception/image_common/issues/155>`_)
