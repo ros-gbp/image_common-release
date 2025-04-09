@@ -1,0 +1,12 @@
+Source: ros-noetic-image-common
+Section: misc
+Priority: optional
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://www.ros.org/wiki/image_common
+Standards-Version: 3.9.2
+
+Package: ros-noetic-image-common
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-camera-calibration-parsers, ros-noetic-camera-info-manager, ros-noetic-image-transport, ros-noetic-polled-camera
+Description: Common code for working with images in ROS.
