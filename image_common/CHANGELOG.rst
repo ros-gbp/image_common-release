@@ -2,6 +2,9 @@
 Changelog for package image_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.12.1 (2025-04-09)
+-------------------
+
 1.12.0 (2020-04-03)
 -------------------
 * Noetic release image_common (`#155 <https://github.com/ros-perception/image_common/issues/155>`_)
